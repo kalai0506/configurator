@@ -4,14 +4,13 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * Created by kalai on 2/14/16.
+/*
+ * Mapping with the paramater in the config XML
  */
-//Mapping with the paramater in the config XML
 @XmlRootElement(name="parameter")
 public class Parameter {
-    String parameterName;
-    String parameterValue;
+    private String parameterName;
+    private String parameterValue;
 
 
     @XmlAttribute(name="name")
