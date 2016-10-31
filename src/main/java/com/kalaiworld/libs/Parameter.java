@@ -3,6 +3,7 @@ package com.kalaiworld.libs;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
 
 /*
  * Mapping with the paramater in the config XML
@@ -10,8 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="parameter")
 public class Parameter {
     private String parameterName;
-    private String parameterValue;
-
+    private ArrayList<Value> parameterValue;
 
     @XmlAttribute(name="name")
     public String getName(){
@@ -23,11 +23,11 @@ public class Parameter {
     }
 
     @XmlElement(name="value")
-    public String getParameterValue(){
+    public ArrayList<Value> getParameterValue() {
         return parameterValue;
     }
 
-    public void setParameterValue(String parameterValue){
-        this.parameterValue=parameterValue;
+    public void setParameterValue(ArrayList<Value> parameterValue) {
+        this.parameterValue = parameterValue;
     }
 }
