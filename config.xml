@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+    <parameter name="com.kalaiworld.application.dbHost">
+        <value >kalaiworld.com</value>
+    </parameter>
+    <parameter name="com.kalaiworld.application.dbPassword">
+        <value env="test">WRE67IYWT90Test</value>
+        <value env="dev">WRE67IYWT90fgDev</value>
+    </parameter>
+    <parameter name="environment">
+        <value>test1</value>
+    </parameter>
+</config>

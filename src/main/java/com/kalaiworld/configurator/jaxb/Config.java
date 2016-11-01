@@ -1,4 +1,4 @@
-package com.kalaiworld.libs;
+package com.kalaiworld.configurator.jaxb;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
